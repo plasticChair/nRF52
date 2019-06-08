@@ -67,7 +67,7 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="74" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/modules/nrfx/mdk/ses_startup_nrf52.s" selected="0" top="45" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditRight" x="0" y="96" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/driver/bme280_twi.c" selected="0" top="59" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="63" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/delay/nrf_delay.h" selected="0" top="37" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditRight" x="27" y="82" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/driver/bme280_twi.h" selected="0" top="66" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditRight" x="0" y="82" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/driver/bme280_twi.h" selected="0" top="66" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="395" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/toolchain/cmsis/include/cmsis_gcc.h" selected="0" top="369" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="67" useTextEdit="1" useBinaryEdit="0" left="0" path="E:/SeggerIDE/include/stdint.h" selected="0" top="41" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="592" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/integration/nrfx/legacy/nrf_drv_twi.h" selected="0" top="577" codecName="Default"/>
@@ -78,5 +78,5 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="115" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/util/nordic_common.h" selected="0" top="90" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="145" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/boards/pca10040.h" selected="0" top="123" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="twi_sensor" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="twi_sensor" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

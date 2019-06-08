@@ -42,7 +42,8 @@
  <Files>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/config/sdk_config.h" selected="0" top="105" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/modules/nrfx/mdk/ses_startup_nrf_common.s" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="33" y="25" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/modules/nrfx/mdk/ses_startup_nrf52.s" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="141" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/modules/nrfx/mdk/ses_startup_nrf52.s" selected="0" top="203" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="477" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/main.c" selected="1" top="452" codecName="Default"/>
  </Files>
  <ARMCrossStudioWindow activeProject="blinky_GPSLogger" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Release" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

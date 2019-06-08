@@ -15,8 +15,8 @@ def replace_all(text, dic):
         text = text.replace(i, j)
     return text
 
-projName = "ble_app_uart_pca10040_s132"
-projNewName = "BLE_UART"
+projName = "GPS_uart"
+projNewName = "GPS_EINK"
 
 dic = OrderedDict()
 dic["macros=\"CMSIS_CONFIG_TOOL=../../../../../../external_tools/cmsisconfig/CMSIS_Configuration_Wizard.jar"] =  "macros=\"CMSIS_CONFIG_TOOL=E:/nRF52832/SDK/external_tools/cmsisconfig/CMSIS_Configuration_Wizard.jar"
@@ -29,7 +29,7 @@ dic[projName] = projNewName
 
 print(dic)
 
-filename = "E:\\nRF52832\pyRename\\" + projName + ".emProject"
+filename = "E:\\nRF52832\\Projects\\pyRename\\" + projName + ".emProject"
 with fileinput.FileInput(filename, inplace=True) as file:
     for line in file:
         print(replace_all(line,dic).rstrip("\n\r"))
