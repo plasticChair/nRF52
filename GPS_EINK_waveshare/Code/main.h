@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#define screenSize  152
+#define screenSize  200
 #define statusBarSize  30
 #define numRows  4
 #define numCols  2

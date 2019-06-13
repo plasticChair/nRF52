@@ -111,15 +111,18 @@
       <file file_name="Code/newFontSmall.h" />
       <file file_name="Code/main.h" />
       <file file_name="../../SDK/external/thedotfactory_fonts/customSmall.c" />
+      <file file_name="Code/paper.h" />
+      <file file_name="../../SDK/external/thedotfactory_fonts/customMed.c" />
+      <file file_name="../../SDK/external/thedotfactory_fonts/customSmall2.c" />
     </folder>
     <folder Name="Common">
       <file file_name="$(SDK)/../Projects/Common/minmea.c" />
       <file file_name="$(StudioDir)/include/time.h" />
-    </folder>
-    <folder Name="None">
-      <file file_name="$(SDK)/modules/nrfx/mdk/ses_startup_nrf52.s" />
-      <file file_name="$(SDK)/modules/nrfx/mdk/ses_startup_nrf_common.s" />
-      <file file_name="$(SDK)/modules/nrfx/mdk/system_nrf52.c" />
+      <folder Name="None">
+        <file file_name="$(SDK)/modules/nrfx/mdk/ses_startup_nrf52.s" />
+        <file file_name="$(SDK)/modules/nrfx/mdk/ses_startup_nrf_common.s" />
+        <file file_name="$(SDK)/modules/nrfx/mdk/system_nrf52.c" />
+      </folder>
     </folder>
   </project>
   <configuration

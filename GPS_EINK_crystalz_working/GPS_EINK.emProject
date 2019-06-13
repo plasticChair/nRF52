@@ -99,18 +99,9 @@
       <file file_name="Code/main.c" />
       <file file_name="Code/config/sdk_config.h" />
       <file file_name="Code/GlobalTypes.h" />
+      <file file_name="main.h" />
       <file file_name="Code/paper.c" />
       <file file_name="../../SDK/external/thedotfactory_fonts/orkney8pts.c" />
-      <folder
-        Name="icons"
-        exclude=""
-        filter="*.*"
-        path="Code/icons"
-        recurse="No" />
-      <file file_name="Code/newFont.h" />
-      <file file_name="Code/newFontSmall.h" />
-      <file file_name="Code/main.h" />
-      <file file_name="../../SDK/external/thedotfactory_fonts/customSmall.c" />
     </folder>
     <folder Name="Common">
       <file file_name="$(SDK)/../Projects/Common/minmea.c" />

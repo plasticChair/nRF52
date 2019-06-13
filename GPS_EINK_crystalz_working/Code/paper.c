@@ -51,12 +51,7 @@ static uint8_t paper_cmd_pon[] = {
   PAPER_CMD_PON,
 };
 
-static uint8_t paper_cmd_psr_bw[] = {
-  PAPER_CMD_PSR,
-  0xDF, // 0x0d,  //WAS: 0xbf, 0x0d
-};
-// red
-static uint8_t paper_cmd_psr_r[] = {
+static uint8_t paper_cmd_psr[] = {
   PAPER_CMD_PSR,
   0xCF, // 0x0d,  //WAS: 0xbf, 0x0d
 };
@@ -289,7 +284,7 @@ ret_code_t paper_init(void) {
   ret = paper_tx_cmd(paper_cmd_pon, sizeof(paper_cmd_pon));
   if (ret != NRF_SUCCESS) return ret;
 
-  ret = paper_tx_cmd(paper_cmd_psr_r, sizeof(paper_cmd_psr_r));
+  ret = paper_tx_cmd(paper_cmd_psr, sizeof(paper_cmd_psr));
   if (ret != NRF_SUCCESS) return ret;
 
   ret = paper_tx_cmd(paper_cmd_pll, sizeof(paper_cmd_pll));
@@ -331,9 +326,6 @@ void paper_pixel_draw(uint16_t x, uint16_t y, uint32_t color) {
     case 2: //red
       paper_buffer_R[byten] |= 1UL << (bitn);
       break;
-    case 3 : //White
-      paper_buffer_R[byten] &= ~(1UL << (bitn));
-      break;
 
     default:
       break;
@@ -371,61 +363,3 @@ void paper_display_invert(bool invert) {
 
 
 
-void  paper_drawBitmapBM(const uint8_t *bitmap, uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color)
-{
- 
-  int16_t byteWidth = (w + 7) / 8; // Bitmap scanline pad = whole byte
-  uint8_t byte = 0;
-
-
-    for (int16_t j = 0; j < h; j++)
-    {
-      for (int16_t i = 0; i < w; i++ )
-      {
-        if (i & 7) byte <<= 1;
-        else
-        {
-          byte = bitmap[j * byteWidth + i / 8];
-
-        }
-        // transparent mode
-     //   if (bool(mode & bm_invert) != bool(byte & 0x80))
-        if ((byte & 0x80))
-        {
-          uint16_t xd = x + i;
-          uint16_t yd = y + j;
-         // if (mode & bm_flip_x) xd = x + w - i;
-        //  if (mode & bm_flip_y) yd = y + h - j;
-          paper_pixel_draw(xd, yd, color);
-        }
-      }
-    }
-
-  
-}
-
-void paper_set_BWMode()
-{
-  ret_code_t ret;
-
-  ret = paper_tx_cmd(paper_cmd_psr_bw, sizeof(paper_cmd_psr_bw));
-  if (ret != NRF_SUCCESS) return ret;
-
-}
-
-void paper_set_RMode()
-{
-  ret_code_t ret;
-
-  ret = paper_tx_cmd(paper_cmd_psr_r, sizeof(paper_cmd_psr_r));
-  if (ret != NRF_SUCCESS) return ret;
-
-}
-
-void paper_print(nrf_lcd_t const * p_instance, uint8_t x, uint8_t y, char *text, uint8_t color){
-
-      nrf_gfx_point_t text_start = NRF_GFX_POINT(x,y);
-      APP_ERROR_CHECK(nrf_gfx_print(p_instance, &text_start, color, text, p_font, true));
-
-
-}

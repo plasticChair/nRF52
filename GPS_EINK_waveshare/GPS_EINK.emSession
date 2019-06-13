@@ -1,14 +1,17 @@
 <!DOCTYPE CrossStudio_Session_File>
 <session>
  <Bookmarks/>
- <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <BreakpointListItem trigger="" line="409" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="Code/main.c" useHWbreakpoint="false"/>
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
  <ExecutionProfileWindow/>
  <FrameBufferWindow>
   <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
  </FrameBufferWindow>
  <Memory1>
   <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="GPS_uart" radix="16" sizeText="" addressText=""/>
-  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="GPS_EINK" radix="16" sizeText="2" addressText="0x2000ffd0"/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="GPS_EINK" radix="16" sizeText="" addressText=""/>
  </Memory1>
  <Memory2>
   <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="GPS_uart" radix="16" sizeText="" addressText=""/>
@@ -26,6 +29,8 @@
   <ProjectSessionItem path="GPS_EINK"/>
   <ProjectSessionItem path="GPS_EINK;GPS_EINK"/>
   <ProjectSessionItem path="GPS_EINK;GPS_EINK;Application"/>
+  <ProjectSessionItem path="GPS_EINK;GPS_EINK;Common"/>
+  <ProjectSessionItem path="GPS_EINK;GPS_EINK;Common;None"/>
   <ProjectSessionItem path="GPS_EINK;GPS_EINK;nRF_Drivers"/>
   <ProjectSessionItem path="GPS_EINK;GPS_EINK;nRF_Libraries"/>
  </Project>
@@ -52,7 +57,11 @@
   <Trace enabled="Yes"/>
  </TraceWindow>
  <Watch1>
-  <Watches active="1" update="Never"/>
+  <Watches active="1" update="Each Second">
+   <Watchpoint numelements="0" expression="PAPER_BUFLEN" evalMode="0" name="PAPER_BUFLEN" radix="16" linenumber="0" filename="" list=""/>
+   <Watchpoint numelements="200" expression="paper_buffer_BW" evalMode="2" name="paper_buffer_BW" radix="16" linenumber="0" filename="" list=""/>
+   <Watchpoint numelements="10" expression="paper_buffer_R" evalMode="2" name="paper_buffer_R" radix="2" linenumber="0" filename="" list=""/>
+  </Watches>
  </Watch1>
  <Watch2>
   <Watches active="0" update="Never"/>
@@ -64,8 +73,17 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="29" y="359" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/main.c" selected="0" top="369" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="17" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/paper.c" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="408" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/main.c" selected="0" top="393" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="89" useTextEdit="1" useBinaryEdit="0" left="0" path="GPS_EINK.emProject" selected="0" top="65" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="111" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/gfx/nrf_gfx.h" selected="0" top="87" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="53" y="163" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/gfx/nrf_gfx.c" selected="0" top="139" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="459" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/paper.c" selected="1" top="436" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="11" y="497" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/integration/nrfx/legacy/nrf_drv_spi.h" selected="0" top="473" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="99" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/util/app_error_weak.c" selected="0" top="76" codecName=""/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="17" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/main.h" selected="0" top="3" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="560" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/modules/nrfx/hal/nrf_gpio.h" selected="0" top="513" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="46" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/paper.h" selected="0" top="18" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="101" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/modules/nrfx/mdk/ses_startup_nrf_common.s" selected="0" top="80" codecName=""/>
  </Files>
  <ARMCrossStudioWindow activeProject="GPS_EINK" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>
