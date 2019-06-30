@@ -1,7 +1,9 @@
 <!DOCTYPE CrossStudio_Session_File>
 <session>
  <Bookmarks/>
- <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
  <ExecutionProfileWindow/>
  <FrameBufferWindow>
   <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
@@ -62,12 +64,10 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="122" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/main.c" selected="1" top="90" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="59" y="75" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/main.c" selected="1" top="72" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="163" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/integration/nrfx/legacy/nrf_drv_twi.c" selected="0" top="128" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="74" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/modules/nrfx/mdk/ses_startup_nrf52.s" selected="0" top="45" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditRight" x="0" y="96" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/driver/bme280_twi.c" selected="0" top="59" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="63" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/delay/nrf_delay.h" selected="0" top="37" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditRight" x="0" y="82" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/driver/bme280_twi.h" selected="0" top="66" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="395" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/toolchain/cmsis/include/cmsis_gcc.h" selected="0" top="369" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="67" useTextEdit="1" useBinaryEdit="0" left="0" path="E:/SeggerIDE/include/stdint.h" selected="0" top="41" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="592" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/integration/nrfx/legacy/nrf_drv_twi.h" selected="0" top="577" codecName="Default"/>

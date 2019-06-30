@@ -4,6 +4,7 @@
  <Breakpoints groups="Breakpoints" active_group="Breakpoints">
   <BreakpointListItem trigger="" line="240" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="Code/main.c" useHWbreakpoint="false"/>
   <BreakpointListItem trigger="" line="242" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="Code/main.c" useHWbreakpoint="false"/>
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
  </Breakpoints>
  <ExecutionProfileWindow/>
  <FrameBufferWindow>
@@ -58,9 +59,9 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="193" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/main.c" selected="1" top="171" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="87" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/main.c" selected="0" top="72" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="692" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/log/src/nrf_log_frontend.c" selected="0" top="767" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="89" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/boards/pca10040.h" selected="0" top="77" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="88" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/boards/pca10040.h" selected="1" top="71" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="500" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/serial/nrf_serial.c" selected="0" top="464" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="763" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/config/sdk_config.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="66" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/modules/nrfx/drivers/include/nrfx_uarte.h" selected="0" top="46" codecName="Default"/>
@@ -69,7 +70,6 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="489" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/queue/nrf_queue.c" selected="0" top="460" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="70" useTextEdit="1" useBinaryEdit="0" left="0" path="E:/SeggerIDE/include/stdarg.h" selected="0" top="45" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="14" useTextEdit="1" useBinaryEdit="0" left="0" path="Code/GlobalTypes.h" selected="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="main.h" selected="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="147" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/hardfault/hardfault_implementation.c" selected="0" top="124" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="405" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/toolchain/cmsis/include/cmsis_gcc.h" selected="0" top="382" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="87" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/util/app_util_platform.c" selected="0" top="43" codecName="Default"/>
@@ -78,8 +78,8 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="157" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/util/sdk_errors.h" selected="0" top="112" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="41" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/drivers_nrf/nrf_soc_nosd/nrf_error.h" selected="0" top="41" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="99" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/util/app_error_weak.c" selected="0" top="1" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="30" y="114" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/pwr_mgmt/nrf_pwr_mgmt.h" selected="0" top="79" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="35" y="40" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/pwr_mgmt/nrf_pwr_mgmt.c" selected="0" top="9" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="114" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/pwr_mgmt/nrf_pwr_mgmt.h" selected="0" top="79" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="40" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/pwr_mgmt/nrf_pwr_mgmt.c" selected="0" top="9" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="79" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/util/nordic_common.h" selected="0" top="56" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="930" useTextEdit="1" useBinaryEdit="0" left="0" path="../../SDK/components/libraries/timer/app_timer.c" selected="0" top="925" codecName="Default"/>
  </Files>
